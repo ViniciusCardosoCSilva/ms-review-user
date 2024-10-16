@@ -12,4 +12,8 @@ public class Review {
 
     private String texto;
 
+    @ManyToOne
+    @JoinColumn(name = "filme_id")
+    private Filme filme;
+
 }
